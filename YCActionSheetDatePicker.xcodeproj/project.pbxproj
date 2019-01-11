@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CD00344B21E7612B0078810C /* YCActionSheetDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = CD00344921E7612B0078810C /* YCActionSheetDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD00347621E761F80078810C /* YCActionSheetDatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00347521E761F80078810C /* YCActionSheetDatePickerVC.swift */; };
+		CD00347821E762510078810C /* YCActionSheetDatePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00347721E762510078810C /* YCActionSheetDatePickerDelegate.swift */; };
+		CD00348021E767040078810C /* YCDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00347F21E767040078810C /* YCDatePickerView.swift */; };
+		CD00348221E8885A0078810C /* YCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00348121E8885A0078810C /* YCButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD00344621E7612B0078810C /* YCActionSheetDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YCActionSheetDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD00344921E7612B0078810C /* YCActionSheetDatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCActionSheetDatePicker.h; sourceTree = "<group>"; };
 		CD00344A21E7612B0078810C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD00347521E761F80078810C /* YCActionSheetDatePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCActionSheetDatePickerVC.swift; sourceTree = "<group>"; };
+		CD00347721E762510078810C /* YCActionSheetDatePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCActionSheetDatePickerDelegate.swift; sourceTree = "<group>"; };
+		CD00347F21E767040078810C /* YCDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCDatePickerView.swift; sourceTree = "<group>"; };
+		CD00348121E8885A0078810C /* YCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				CD00344921E7612B0078810C /* YCActionSheetDatePicker.h */,
 				CD00344A21E7612B0078810C /* Info.plist */,
+				CD00347521E761F80078810C /* YCActionSheetDatePickerVC.swift */,
+				CD00347721E762510078810C /* YCActionSheetDatePickerDelegate.swift */,
+				CD00347F21E767040078810C /* YCDatePickerView.swift */,
+				CD00348121E8885A0078810C /* YCButton.swift */,
 			);
 			path = YCActionSheetDatePicker;
 			sourceTree = "<group>";
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					CD00344521E7612B0078810C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD00347821E762510078810C /* YCActionSheetDatePickerDelegate.swift in Sources */,
+				CD00348221E8885A0078810C /* YCButton.swift in Sources */,
+				CD00348021E767040078810C /* YCDatePickerView.swift in Sources */,
+				CD00347621E761F80078810C /* YCActionSheetDatePickerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +278,7 @@
 		CD00344F21E7612B0078810C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -269,6 +287,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YCActionSheetDatePicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,6 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tfm.YCActionSheetDatePicker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +305,7 @@
 		CD00345021E7612B0078810C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -293,6 +314,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YCActionSheetDatePicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
